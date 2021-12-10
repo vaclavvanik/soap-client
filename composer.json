@@ -1,0 +1,46 @@
+{
+  "name": "vaclavvanik/soap-client",
+  "description": "Lightweight low-level PSR-18 SOAP client",
+  "license": "MIT",
+  "type": "library",
+  "homepage": "https://github.com/vaclavvanik/soap-client",
+  "keywords": [
+    "soap",
+    "client",
+    "http"
+  ],
+  "authors": [
+    {
+      "name": "Václav Vaník",
+      "email": "vaclav.vanik@gmail.com"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "require": {
+    "php": "^7.3 || ^8.0",
+    "ext-soap": "*",
+    "psr/http-client": "^1.0.0",
+    "psr/http-message": "^1.0.0",
+    "vaclavvanik/soap-binding": "^0.2.0"
+  },
+  "require-dev": {
+
+  },
+  "autoload": {
+    "psr-4": {
+      "VaclavVanik\\Soap\\Client\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "VaclavVanikTest\\Soap\\Client\\": "test/unit"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "0.1.x-dev"
+    }
+  }
+}
